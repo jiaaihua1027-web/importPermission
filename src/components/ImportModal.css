@@ -1,0 +1,329 @@
+/* 权限导入弹窗样式 - 上下布局 */
+
+.import-modal .ant-modal-content {
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.import-modal .ant-modal-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #E8E8E8;
+  background: linear-gradient(135deg, #F7F9FC 0%, #FFFFFF 100%);
+}
+
+.import-modal .ant-modal-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.import-modal .ant-modal-close {
+  top: 16px;
+  right: 16px;
+  color: #999;
+}
+
+.import-modal .ant-modal-close:hover {
+  color: #333;
+}
+
+.import-modal .ant-modal-body {
+  padding: 0;
+}
+
+.import-modal-content {
+  background: #FFFFFF;
+}
+
+/* 区块通用样式 */
+.section-header {
+  padding: 16px 24px;
+  background: #FAFBFC;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title-icon {
+  font-size: 16px;
+}
+
+.section-body {
+  padding: 20px 24px;
+}
+
+/* 上部分：下载模版区域 */
+.template-download-section {
+  border-bottom: none;
+}
+
+/* 表单行 */
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.form-label {
+  width: 80px;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.template-select {
+  flex: 1;
+}
+
+.template-select .ant-select-selector {
+  height: 36px;
+  border-color: #D9D9D9;
+  border-radius: 4px;
+}
+
+.template-select .ant-select-selection-item {
+  line-height: 34px;
+}
+
+/* 领域选择行 */
+.domain-select-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.domain-select-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: #FFF7E6;
+  border: 1px solid #FFD591;
+  border-radius: 4px;
+}
+
+.domain-info {
+  font-size: 13px;
+  color: #FA8C16;
+}
+
+.domain-select-btn {
+  padding: 0;
+  height: auto;
+  font-size: 13px;
+  color: #18B681;
+}
+
+.domain-select-btn:hover {
+  color: #1BC88A;
+}
+
+/* 下载按钮 */
+.download-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #18B681 0%, #1BC88A 100%);
+  border: none;
+  height: 36px;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(24, 182, 129, 0.3);
+}
+
+.download-btn:hover {
+  background: linear-gradient(135deg, #1BC88A 0%, #2BD69B 100%);
+  box-shadow: 0 4px 12px rgba(24, 182, 129, 0.4);
+}
+
+/* 分隔线 */
+.section-divider {
+  height: 1px;
+  background: #E8E8E8;
+  margin: 0;
+}
+
+/* 下部分：导入区域 */
+.import-upload-section {
+  border-bottom: 1px solid #E8E8E8;
+}
+
+/* 上传区域 */
+.upload-dragger {
+  margin-bottom: 16px;
+}
+
+.upload-dragger .ant-upload-drag {
+  border: 2px dashed #D9D9D9;
+  border-radius: 8px;
+  background: #FAFBFC;
+  padding: 32px 20px;
+  transition: all 0.3s ease;
+}
+
+.upload-dragger .ant-upload-drag:hover {
+  border-color: #18B681;
+  background: #F0FFF4;
+}
+
+.upload-dragger .ant-upload-drag-icon {
+  margin-bottom: 12px;
+}
+
+.upload-dragger .ant-upload-drag-icon .anticon {
+  font-size: 48px;
+  color: #D9D9D9;
+  transition: color 0.3s ease;
+}
+
+.upload-dragger .ant-upload-drag:hover .ant-upload-drag-icon .anticon {
+  color: #18B681;
+}
+
+.upload-dragger .ant-upload-text {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.upload-link {
+  color: #18B681;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.upload-link:hover {
+  color: #1BC88A;
+}
+
+.upload-dragger .ant-upload-hint {
+  font-size: 13px;
+  color: #999999;
+  line-height: 1.6;
+}
+
+/* 已上传文件 */
+.uploaded-file {
+  padding: 12px 16px;
+  background: #F0FFF4;
+  border: 1px solid #B7EB8F;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.file-icon {
+  font-size: 16px;
+}
+
+.file-name {
+  flex: 1;
+  font-size: 13px;
+  color: #52C41A;
+  font-weight: 500;
+}
+
+/* 导入进度 */
+.import-progress {
+  padding: 16px;
+  background: #F7F9FC;
+  border-radius: 4px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #333333;
+  font-weight: 500;
+}
+
+.import-progress .ant-progress-bg {
+  background-color: #18B681;
+}
+
+/* 底部按钮 */
+.modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #E8E8E8;
+  background: #FAFBFC;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.modal-footer .ant-btn {
+  height: 36px;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.modal-footer .ant-btn-default {
+  border-color: #D9D9D9;
+  color: #666666;
+}
+
+.modal-footer .ant-btn-default:hover {
+  border-color: #18B681;
+  color: #18B681;
+}
+
+.import-btn {
+  background: linear-gradient(135deg, #18B681 0%, #1BC88A 100%);
+  border: none;
+  box-shadow: 0 2px 8px rgba(24, 182, 129, 0.3);
+}
+
+.import-btn:hover {
+  background: linear-gradient(135deg, #1BC88A 0%, #2BD69B 100%);
+  box-shadow: 0 4px 12px rgba(24, 182, 129, 0.4);
+}
+
+.import-btn:disabled {
+  background: #D9D9D9;
+  box-shadow: none;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .import-modal .ant-modal {
+    max-width: 95%;
+  }
+
+  .form-row,
+  .domain-select-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-label {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .template-select,
+  .domain-select-wrapper {
+    width: 100%;
+  }
+}

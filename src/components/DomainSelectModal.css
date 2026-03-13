@@ -1,0 +1,136 @@
+.domain-select-modal .ant-modal-body {
+  padding: 0;
+}
+
+.domain-select-content {
+  padding: 16px;
+}
+
+/* 工具栏 */
+.domain-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E4E7ED;
+}
+
+.domain-toolbar .ant-input-search {
+  height: 32px;
+}
+
+/* 已选择的领域 */
+.selected-domains {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  padding: 12px;
+  background: #F2F6FC;
+  border-radius: 4px;
+}
+
+.selected-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  margin-right: 12px;
+  white-space: nowrap;
+  line-height: 28px;
+}
+
+.selected-tags {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.selected-tags .ant-tag {
+  margin: 0;
+  padding: 2px 8px;
+  background: white;
+  border: 1px solid #3B78E0;
+  color: #3B78E0;
+}
+
+/* 树容器 */
+.domain-tree-container {
+  min-height: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+  border: 1px solid #E4E7ED;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+/* 树形样式 */
+.domain-tree {
+  font-size: 14px;
+}
+
+.domain-tree .ant-tree-node-content-wrapper {
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.domain-tree .ant-tree-node-content-wrapper:hover {
+  background: #F2F6FC;
+}
+
+.domain-tree .ant-tree-checkbox-checked .ant-tree-checkbox-inner {
+  background-color: #3B78E0;
+  border-color: #3B78E0;
+}
+
+.domain-tree .ant-tree-title {
+  font-size: 14px;
+}
+
+/* 父节点样式 */
+.domain-tree .ant-tree-treenode-disabled .ant-tree-node-content-wrapper {
+  color: #333333;
+  font-weight: 500;
+}
+
+/* 叶子节点样式 */
+.domain-tree .ant-tree-child-tree .ant-tree-title {
+  color: #666666;
+  font-weight: 400;
+}
+
+/* 滚动条 */
+.domain-tree-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.domain-tree-container::-webkit-scrollbar-track {
+  background: #F2F6FC;
+  border-radius: 4px;
+}
+
+.domain-tree-container::-webkit-scrollbar-thumb {
+  background: #C0C4CC;
+  border-radius: 4px;
+}
+
+.domain-tree-container::-webkit-scrollbar-thumb:hover {
+  background: #909399;
+}
+
+/* Footer */
+.domain-select-modal .ant-modal-footer {
+  padding: 12px 16px;
+  border-top: 1px solid #E4E7ED;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

@@ -1,0 +1,158 @@
+.list-page {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* 页面标题 */
+.page-header {
+  margin-bottom: var(--spacing-xxl);
+}
+
+.page-title {
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.page-desc {
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+}
+
+/* 列表卡片 */
+.list-card {
+  background: var(--color-bg-card);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+/* 工具栏 */
+.list-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-lg) var(--spacing-xxl);
+  border-bottom: 1px solid var(--color-border-light);
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.toolbar-left,
+.toolbar-right {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.toolbar-left .ant-input-search {
+  height: var(--height-input);
+}
+
+.toolbar-left .ant-select,
+.toolbar-right .ant-btn {
+  height: var(--height-input);
+}
+
+/* 表格 */
+.list-table {
+  padding: var(--spacing-lg) var(--spacing-xxl);
+}
+
+.list-table .ant-table {
+  font-size: var(--font-size-body);
+}
+
+.list-table .ant-table-thead > tr > th {
+  background: #FAFBFC;
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-semibold);
+  border-bottom: 2px solid var(--color-border);
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.list-table .ant-table-tbody > tr > td {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.list-table .ant-table-tbody > tr:hover > td {
+  background: #F2F6FC;
+}
+
+/* 权限名称样式 */
+.permission-name {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+/* 权限编码样式 */
+.permission-code {
+  background: #F2F6FC;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: var(--font-size-small);
+  color: var(--color-primary);
+}
+
+/* 操作按钮 */
+.list-table .ant-btn-link {
+  padding: 0 var(--spacing-xs);
+  height: auto;
+}
+
+.list-table .ant-space-item {
+  margin: 0 !important;
+}
+
+/* 分页 */
+.list-table .ant-pagination {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border-light);
+}
+
+/* 弹窗表单 */
+.ant-modal-body .ant-form-item {
+  margin-bottom: var(--spacing-lg);
+}
+
+.ant-modal-body .ant-form-item-label > label {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .list-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .toolbar-left,
+  .toolbar-right {
+    justify-content: flex-start;
+  }
+
+  .toolbar-left .ant-input-search {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .list-table {
+    padding: var(--spacing-md);
+  }
+
+  .list-table .ant-table {
+    font-size: var(--font-size-small);
+  }
+
+  .list-table .ant-table-thead > tr > th,
+  .list-table .ant-table-tbody > tr > td {
+    padding: var(--spacing-sm);
+  }
+}
