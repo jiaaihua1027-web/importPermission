@@ -4,9 +4,9 @@
   "description": "权限导入工具",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "install": "npm install --legacy-peer-deps",
     "build": "npm install --legacy-peer-deps && vite build",
-    "preview": "vite preview"
+    "deploy": "npm install --legacy-peer-deps && wrangler deploy"
   },
   "dependencies": {
     "react": "^18.2.0",
